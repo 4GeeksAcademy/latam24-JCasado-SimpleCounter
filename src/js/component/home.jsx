@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-// include your styles into the webpack bundle
-
 function Home({seconds}) 
 {
 			return (<div className="clock">
@@ -13,6 +11,8 @@ function Home({seconds})
 		<div className="three">{Math.floor(seconds / 10) % 10}</div>
 		
 		<div className="four">{Math.floor(seconds / 1) % 10}</div>
+
 	</div>);
 };
+
 export default Home;
